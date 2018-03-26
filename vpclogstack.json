@@ -329,7 +329,7 @@
     "AddFlowLogToVpcCmd" : {
       "Value" : { "Fn::Join" : [ "", [ 
         "aws ec2 create-flow-logs --resource-type VPC",
-        " --traffic-type ACCEPT --resource-ids vpc-4828ab2",
+        " --traffic-type ACCEPT --resource-ids vpc-4828ab20",
         " --log-group-name ", { "Ref" : "FlowLogs" }, 
         " --deliver-logs-permission-arn ", 
           { "Fn::GetAtt" : [ "FlowLogsToCloudWatch", "Arn" ] }
